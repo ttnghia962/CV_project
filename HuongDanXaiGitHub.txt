@@ -1,0 +1,29 @@
+Đầu tiên là xác định đường dẫn
+Nếu lưu khác ổ đĩa thì xài câu lệnh: cd \d "Đường dẫn"
+Còn không thì xài cd \ rồi bỏ đường dẫn vào 
+
+git config --global user.name "Điển tên vào"
+git config --global user.email "Điền email vào@gmail.com"
+### config dùng để xác định thông tin, để biết ai sửa gì và làm gì
+
+git status: Dùng để kiểm tra trạng thái của Repo
+
+Flow: 
+###
+git clone "URL"
+git init: Dùng khi không có thư mục .git (Khởi tạo 1 repo)
+git add: Dùng để add file vào repo 
+git commit -m "Cái gì đó": Dùng để xác nhận các file sẽ push lên github
+git push: Dùng để đẩy file lên github
+###
+
+git branch "tên": tạo ra 1 nhánh mới
+git branch: xem hiện tại đang nhánh nào
+git checkout "tên branch": truy cập nhánh đó
+
+khi có conflict: git pull (kéo file chỉnh sửa về máy rồi chọn file nào để push)
+git rm "file_name": Gắn cái tên vô để xóa
+git commit -m "Deleted <file_name>": Giống commit để xác nhận là xóa file thôi
+git push origin "branch_name": Xóa ở branch nào ghi rõ ra. 
+git reset: reset lại file đã add
+

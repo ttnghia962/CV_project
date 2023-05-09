@@ -17,10 +17,6 @@ git commit -m "Cái gì đó": Dùng để xác nhận các file sẽ push lên 
 git push: Dùng để đẩy file lên github
 ###
 
-### 
-Đôi khi clone về sẽ không tìm thấy branch trên github thì cứ dùng git checkout Tên_Branch để chuyển trực tiếp luôn cũng được
-###
-
 git branch "tên": tạo ra 1 nhánh mới
 git branch: xem hiện tại đang nhánh nào
 git checkout "tên branch": truy cập nhánh đó
@@ -30,4 +26,17 @@ git rm "file_name": Gắn cái tên vô để xóa
 git commit -m "Deleted <file_name>": Giống commit để xác nhận là xóa file thôi
 git push origin "branch_name": Xóa ở branch nào ghi rõ ra. 
 git reset: reset lại file đã add
-git fetch: dùng giống như git pull
+
+### Update 1 file trong main sang nhánh riêng:
+- Vô branch main (git checkout main):
+git add tên-file
+git commit -m "commit message"
+- Chuyển sang nhánh muốn update file đó:
+git checkout tên-nhánh
+- Xác nhập main với nhánh riêng:
+git merge main
+- Push lên nhánh riêng để xài:
+git push origin Tên_Nhánh
+###
+
+

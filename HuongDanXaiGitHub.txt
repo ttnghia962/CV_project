@@ -39,4 +39,6 @@ git merge main
 git push origin Tên_Nhánh
 ###
 
+#Nhánh:
+git push <remote> <tên nhánh>
 
